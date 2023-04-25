@@ -17,7 +17,7 @@ body {
     position: relative;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #131313;
     color: white;
 }
 
@@ -25,6 +25,19 @@ body {
     font-size: 2rem;
     margin: .5rem;
     margin-left: 2rem;
+}
+
+@media (max-width:320px){
+  .brand-title {
+    font-size: 2rem;
+    margin: .5rem;
+    margin-left: 0rem;
+}
+}
+
+.icon{
+  width:3rem;
+  height:3rem;
 }
 
 .navbar-links {
@@ -553,8 +566,12 @@ body {
   width:105px;
   font-family: 'Playfair Display', serif;
   font-size: 22px;
-  margin:3px;
+  margin:10px;
   text-align: center;
+}
+
+#KidsBtn{
+  margin-top:25px;
 }
 
 .dark-mode .btn{
@@ -574,6 +591,10 @@ body {
 
 .menu-items .row{
   margin:0px 0px 0px 0px;
+}
+
+.menu-items{
+  margin-top: 0px;
 }
 
 .col a{
@@ -680,11 +701,13 @@ body {
   color:#ffffff;
 }
 
-.bagrd img{
+.container-bagrd img{
   height:500px;
   width:100%;
   background-size: cover;
+  margin: 0px;
 }
+
 
 .searchbox{
   position:relative;
@@ -701,6 +724,27 @@ h1.tag{
   color: #353535;
   font-size:30px;
   font-family: "Cormorant Garamond", serif;
+}
+
+@media (max-width:350px){
+  h1.tag{
+    margin-left:12px;
+  }
+
+  .searchbox{
+    position:relative;
+    margin-left:12px;
+    bottom: 260px;
+    width: 90%;
+  }
+
+  .custom-btn{
+    border:0px solid #000;
+    width: fit-content;
+    margin-left:10px;
+    position: relative;
+  
+  }
 }
 
 .container-bagrd { 
@@ -777,7 +821,7 @@ button.shopbtn:hover:after {
 .container-dec{
   border:0px solid #000;
   display:flex;
-  margin:300px 50px 50px 50px;
+  margin:200px 50px 50px 50px;
   position: relative;
 }
 
